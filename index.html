@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de Assinatura de Email - Sesc Pinheiros</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Gerador de Assinatura de Email</h1>
+        <p>Preencha os campos abaixo para gerar sua assinatura de email institucional.</p>
+        <form id="signature-form">
+            <div class="form-group">
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="department">Setor:</label>
+                <input type="text" id="department" name="department" required>
+            </div>
+            <div class="form-group">
+                <label for="extension">Ramal:</label>
+                <input type="text" id="extension" name="extension" required>
+            </div>
+            <button type="button" id="generate-btn">Gerar Assinatura</button>
+        </form>
+
+        <h2>Pré-visualização</h2>
+        <div id="signature-preview">
+            <!-- A assinatura gerada aparecerá aqui -->
+        </div>
+
+        <button id="copy-btn">Copiar para Área de Transferência</button>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
