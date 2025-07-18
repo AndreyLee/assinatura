@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de Assinatura de Email</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Gerador de Assinatura de Email</h1>
+        <form id="signature-form">
+            <label for="name">Nome Completo:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="sector">Setor:</label>
+            <input type="text" id="sector" name="sector" required>
+
+            <label for="extension">Ramal:</label>
+            <input type="text" id="extension" name="extension" required>
+
+            <button type="submit">Gerar Assinatura</button>
+        </form>
+
+        <div class="preview-container">
+            <h2>Pré-visualização da Assinatura</h2>
+            <img id="signature-preview" src="" alt="Sua assinatura aparecerá aqui">
+            <button id="copy-button">Copiar para Área de Transferência</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
